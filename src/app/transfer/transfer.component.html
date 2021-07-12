@@ -1,0 +1,29 @@
+<h3 style=text-align:center>Transfer funds</h3>
+
+<form   class="col-md-4 "    #addform="ngForm"   (ngSubmit)="addTransfer(addform.value)">
+  
+ <div class="form-group" >
+    <label>Enter Receivers AccountNumber</label>
+    <input type="number" class="form-control" name="receiverAccountNumber"  ngModel placeholder="Enter 12 number A/C number" required>
+  </div>
+    
+  <div class="form-group">
+    <label>Bank IFSC</label>
+    <input type="text" class="form-control" name="bankIFSC"  ngModel placeholder="Enter 10 digit Bank IFSC code" required>
+  </div>
+
+
+  <div class="form-group">
+    <label>Amount</label>
+    <input type="text" class="form-control" name="amount"  ngModel placeholder="Enter amount in thousands" required>
+  </div>
+
+
+  
+  <div class="form-group">
+    <label >Transaction Password</label>
+    <input type="password" class="form-control" name="transactionPassword"  ngModel placeholder="Enter your 7 digit Password" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>

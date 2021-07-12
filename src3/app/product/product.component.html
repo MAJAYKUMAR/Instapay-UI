@@ -1,0 +1,43 @@
+
+
+<div class="header">
+  <img src="assets/logo.png" width=20% height="20%">
+  <a href="#default" class="logo"></a>
+
+  <div class="header-right">
+    <a class="nav-link"
+              *ngIf="loginservice.isUserLoggedIn()"  routerLink="/home">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+                
+              
+               
+                <a class="nav-link"  *ngIf="!loginservice.isUserLoggedIn()"  routerLink="/login">Login</a>
+                <a class="nav-link" *ngIf="loginservice.isUserLoggedIn()"  routerLink="/savingsaccount">SavingsAccount</a>
+                <a class="nav-link" *ngIf="loginservice.isUserLoggedIn()"  routerLink="/RecurringDeposit">RecurringDeposit</a>
+                <a class="nav-link" *ngIf="loginservice.isUserLoggedIn()"  routerLink="/Remittance">RemmitanceAccount</a>
+                <a class="nav-link" *ngIf="loginservice.isUserLoggedIn()"  routerLink="/FixedDeposit">FixedDeposit</a>
+                <a class="nav-link" *ngIf="loginservice.isUserLoggedIn()"  routerLink="/logout">Logout</a>
+                <a class="nav-link" *ngIf="!loginservice.isUserLoggedIn()" routerLink="/Register">Register</a>
+                <a class="nav-link"*ngIf="!loginservice.isUserLoggedIn()" routerLink="/Admin">Admin</a>
+  </div>
+</div>
+
+
+
+
+
+    <router-outlet></router-outlet>
+
+    <footer      class="footer">
+        
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">All Rights are Reserved CopyRight  ©Instapay 2020</nav>
+            
+      
+      </footer>
+          
+      
+
+
+
+  

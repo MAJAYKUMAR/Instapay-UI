@@ -1,0 +1,43 @@
+
+
+<!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+  </head>
+  
+  
+  <div class="wrapper fadeInDown">
+   
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+     
+       
+    
+  
+      <!-- Login Form -->
+      <h3>Admin Login</h3>
+      <form class="form-signin" #loginform="ngForm"  >
+        <input type="text" id="inputusername" class="fadeIn second" name="username" placeholder="Username" ngModel  required autofocus>
+        <input type="password" id="inputPassword" class="fadeIn third" name="password" placeholder="Password" ngModel  placeholder="Password" required>
+        <input type="submit" class="fadeIn fourth" value="Sign In">
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="fadeIn third" id="customCheck1">
+          <label class="fadeIn third" for="customCheck1"> Remember Me</label>
+        </div>
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>
